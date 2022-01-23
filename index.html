@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>Главная | Type-X Finance</title>
+    <link rel="icon" href="assets/img/favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <div class="wrapper" id="typex-app">
+        <div id="top"></div>
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-navigation-wrapper">
+                <div class="logo-wrapper">
+                    <a href="javascript:void(0);">
+                        <img src="assets/img/logo.svg" alt="logo" onclick="scrollToTop()" class="logo-img">
+                    </a>
+                    <div class="mobile-menu-btn-wrapper">
+                        <img src="assets/img/menu-burger.svg" alt="open menu" class="mobile-menu-burger" onclick="mobMenuShow()">
+                        <img src="assets/img/close.svg" alt="close menu" class="mobile-menu-close" onclick="mobMenuHide()">
+                    </div>
+                </div>
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li class="nav-list-item" data-scroll="main-screen"><a href="javascript:void(0);" onclick="scrollToTop()">Главная</a></li>
+                        <li class="nav-list-item" data-scroll="about-section"><a href="javascript:void(0);" onclick="scrollToAbout()">О компании</a></li>
+                        <li class="nav-list-item" data-scroll="services"><a href="javascript:void(0);" onclick="scrollToServices()">Наши услуги</a></li>
+                        <li class="nav-list-item" data-scroll="testimonials"><a href="javascript:void(0);" onclick="scrollToTestimonials()">Отзывы</a></li>
+                        <!-- <li class="nav-list-item"><a href="javascript:void(0);">FAQ <img src="assets/img/arrow-down-small.svg" alt="arrow-down" class="arrow-down-faq" width="15"> </a></li> -->
+                        <li class="nav-list-item" data-scroll="contact"><a href="javascript:void(0);" onclick="scrollToContact()">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- <div class="header-cab-wrapper">
+                <div class="header-lang-wrapper">
+                    <img src="assets/img/icon_flag.svg" alt="english" class="header-lang-img">
+                    <span class="header-lang-indication">ENG</span>
+                </div>
+                <div class="header-cab-btn">
+                    <img src="assets/img/user-white.svg" alt="arrow to right" class="user-white-img">
+                    <a href="javascript:void(0);" class="cabinet-link">Личный кабинет</a>
+                </div>
+            </div> -->
+        </header>
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu-block">
+            <div class="mobile-menu">
+                <nav class="navigation">
+                    <ul class="nav-list">
+                        <li class="nav-list-item"><a href="javascript:void(0);" onclick="scrollToTop()">Главная</a></li>
+                        <li class="nav-list-item"><a href="javascript:void(0);" @click="scrollToAbout">О компании</a></li>
+                        <li class="nav-list-item"><a href="javascript:void(0);" onclick="scrollToServices()">Наши услуги</a></li>
+                        <li class="nav-list-item"><a href="javascript:void(0);" onclick="scrollToTestimonials()">Отзывы</a></li>
+                        <!-- <li class="nav-list-item"><a href="javascript:void(0);">FAQ</a></li> -->
+                        <li class="nav-list-item"><a href="javascript:void(0);" onclick="scrollToContact()">Контакты</a></li>
+                    </ul>
+                </nav>
+                <!-- <div class="header-lang-wrapper">
+                    <img src="assets/img/icon_flag.svg" alt="english" class="header-lang-img">
+                    <span class="header-lang-indication">ENG</span>
+                </div>
+                <div class="header-cab-btn">
+                    <img src="assets/img/user-white.svg" alt="arrow to right" class="user-white-img">
+                    <a href="javascript:void(0);" class="cabinet-link">Личный кабинет</a>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- MAIN SCREEN -->
+        <section class="main-screen" id="main-screen">
+            <h1 class="main-heading">
+                Финансовые решения <br>
+                для интернет-маркетинга
+            </h1>
+            <h3 class="main-subheading">
+                Минимум затрат, максимум результата
+            </h3>
+            <button class="black-btn" onclick="scrollToForm()">
+                Связаться с нами
+            </button>
+            <button class="transp-btn" onclick="scrollToAbout()">
+                О компании
+            </button>
+            <img src="assets/img/arrow-down.svg" alt="arrow-down" class="arrow-down" onclick="scrollToAbout()">
+            <img src="assets/img/mob-nav-arrow.svg" alt="arrow-navigation" class="mob-arrow-nav" onclick="scrollToAbout()">
+            <img src="assets/img/main-screen-left.svg" class="main-bg-left" alt="man-with-laptop">
+            <img src="assets/img/main-screen-right.svg" class="main-bg-right" alt="phone-and-credit-card">
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section-about" id="about-section">
+            <div class="about-left-block">
+                <div class="about-left-block-content">
+                    <h2 class="section-heading">
+                        О компании <br> Type-X Finance
+                    </h2>
+                    <p class="about-text">
+                        Type-X Finance - это ведущий специалист на рынке финансовых услуг. Мы всегда готовы предоставить эффективное и профессиональное решение Ваших проблем в сфере интернет-маркетинга.
+                        <br><br>
+                        Благодаря многолетнему опыту, знаниям и навыкам наших сотрудников, мы оказываем максимально эффективную и равносильную поддержку всем нашим клиентам, начиная от самых малых команд и заканчивая крупными игроками рынка интернет-маркетинга.
+                    </p>
+                    <button class="black-btn" onclick="scrollToForm()">
+                        Получить коммерческое предложение
+                    </button>
+                </div>
+            </div>
+            <div class="about-right-block">
+                <div class="features-list">
+                    <div class="features-list-item">
+                        <h3 class="feature-name">
+                            <div class="feature-sign"><div></div></div>
+                            Безопасность и конфиденциальность
+                        </h3>
+                        <p class="about-text">
+                            Мы предоставляем очень важные и технически сложные услуги нашим клиентам, в связи с чем берем на себя ответственность и обязательство обеспеспечивать непрекосновенность и конфиденциальность личных данных наших клиентов.
+                        </p>
+                        <a href="javascript:void(0);" class="feature-link" onclick="subscrPopupShow()">Подробнее</a>
+                    </div>
+                    <div class="features-list-item">
+                        <h3 class="feature-name">
+                            <div class="feature-sign"><div></div></div>
+                            Полный цикл
+                        </h3>
+                        <p class="about-text">
+                            Для всех наших клиентов мы готовы оказывать услуги полного цикла, что включают в себя получение и отправку фиатных безналичных платежей, покупка/продажа и транзит криптовалюты, транспортировка/перестановка и инкассация фиатных наличных средств, а также ряд других услуг, с которыми можно ознакомиться на одноименной странице нашего сайта.
+                        </p>
+                        <a href="javascript:void(0);" class="feature-link" onclick="subscrPopupShow()">Подробнее</a>
+                    </div>
+                    <div class="features-list-item">
+                        <h3 class="feature-name">
+                            <div class="feature-sign"><div></div></div>
+                            Поддержка 24/7
+                        </h3>
+                        <p class="about-text">
+                            Специалисты нашей службы поддержки обучены финансовой грамоте, а также технически подкованы. Благодаря этому, мы готовы оказывать помощь нашим клиентам по любым вопросам 24 часа в сутки и 7 дней в неделю.
+                        </p>
+                    </div>
+                    <div class="features-list-item">
+                        <h3 class="feature-name">
+                            <div class="feature-sign"><div></div></div>
+                            Нам доверяют
+                        </h3>
+                        <p class="about-text">
+                            Ответственность и профессиональный подход к любимому делу позволили нам заработать доверие многих игроков рынка.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="section-services" id="services">
+            <h2 class="section-heading text-center">
+                Наши услуги
+            </h2>
+            <div class="huge-white-circle-upper"></div>
+            <div class="services-content container">
+                <div class="services-card">
+                    <div class="services-card-content">
+                        <h3 class="services-card-heading">
+                            Корпоративные карты под медиабаинг
+                        </h3>
+                        <p class="about-text">
+                            ПриватБанк, Райффайзен Банк Аваль, Альфа Банк, Мегабанк, ОТП Банк.
+                        </p>
+                    </div>
+                    <a href="javascript:void(0);" class="services-link" onclick="scrollToForm()">Оставить заявку</a>
+                </div>
+                <div class="type-x-sign">
+                    <img src="assets/img/logo.svg" alt="logo">
+                </div>
+                <div class="services-card">
+                    <div class="services-card-content">
+                        <h3 class="services-card-heading">
+                            Обмен криптовалют
+                        </h3>
+                        <p class="about-text">
+                            Покупка и продажа всех известных криптовалют по рыночному курсу.
+                        </p>
+                    </div>
+                    <a href="javascript:void(0);" class="services-link" onclick="scrollToForm()">Оставить заявку</a>
+                </div>
+            </div>
+            <div class="services-row container">
+                <div class="services-card">
+                    <div class="services-card-content">
+                        <h3 class="services-card-heading">
+                            Гарант
+                        </h3>
+                        <p class="about-text">
+                            Обеспечение и гарантирование сделок купли-продажи любых товаров и материалов.
+                        </p>
+                    </div>
+                    <a href="javascript:void(0);" class="services-link" onclick="scrollToForm()">Оставить заявку</a>
+                </div>
+            </div>
+            <div class="huge-white-circle-lower"></div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="section-testimonials" id="testimonials">
+            <div class="call-to-action container">
+                <p class="about-text">
+                    Присоединяйтесь к <span class="text-bold">Type-X Finance</span> и ощутите преимущества сотрудничества с нами уже сегодня
+                </p>
+            </div>
+            <h2 class="section-heading text-center">
+                Отзывы наших клиентов
+            </h2>
+            <div class="testimonials-carousel container" id="carousel">
+                <div class="testimonials-track">
+                    <div class="testimonials-card">
+                        <div class="testimonials-card-content card-01" onclick="testimonialPopupShow()">
+                            <img src="assets/img/zoom.svg" alt="zoom" class="zoom-btn">
+                        </div>
+                    </div>
+                    <div class="testimonials-card">
+                        <div class="testimonials-card-content card-02" onclick="testimonialPopupShow()">
+                            <img src="assets/img/zoom.svg" alt="zoom" class="zoom-btn">
+                        </div>
+                    </div>
+                    <div class="testimonials-card">
+                        <div class="testimonials-card-content card-03" onclick="testimonialPopupShow()">
+                            <img src="assets/img/zoom.svg" alt="zoom" class="zoom-btn">
+                        </div>
+                    </div>
+                    <div class="testimonials-card">
+                        <div class="testimonials-card-content card-04" onclick="testimonialPopupShow()">
+                            <img src="assets/img/zoom.svg" alt="zoom" class="zoom-btn">
+                        </div>
+                    </div>
+                    <div class="testimonials-card">
+                        <div class="testimonials-card-content card-05" onclick="testimonialPopupShow()">
+                            <img src="assets/img/zoom.svg" alt="zoom" class="zoom-btn">
+                        </div>
+                    </div>
+                    <div class="testimonials-card">
+                        <div class="testimonials-card-content card-06" onclick="testimonialPopupShow()">
+                            <img src="assets/img/zoom.svg" alt="zoom" class="zoom-btn">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="testimonials-carousel-navigation">
+                <button class="testimonials-prev-button">
+                    <div class="arrow-short-left"></div>
+                </button>
+                <button class="testimonials-next-button">
+                    <div class="arrow-short-right"></div>
+                </button>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section-contact" id="contact">
+            <div class="container contact-content">
+                <div class="contact-info">
+                    <h2 class="section-heading">
+                        Контакты и обратная связь
+                    </h2>
+                    <p class="about-text desktop-only">
+                        Клиентская поддержка с радостью ответит на все интересующие Вас вопросы. Для того, чтобы оставить заявку воспользуйтесь одним из перечисленных способов.
+                    </p>
+                    <p class="about-text mobile-only">
+                        Клиентская поддержка с радостью готова ответить на любой Ваш вопрос. Для этого достаточно написать нам на корпоративный email адрес или же заполнить форму обратной связи.
+                    </p>
+                    <div class="chat-wrapper desktop-only">
+                        <a class="chat-link">
+                            Онлайн чат
+                        </a>
+                        <a class="chat-link" href="https://web.telegram.org/" target="_blank">
+                            Telegram
+                            <img src="assets/img/telegram-white.svg" alt="Telegram">
+                        </a>
+                        <a class="chat-link" href="https://signal.org/" target="_blank">
+                            Signal
+                            <img src="assets/img/signal-white.svg" alt="Signal">
+                        </a>
+                        <a class="chat-link" href="https://www.whatsapp.com/" target="_blank">
+                            WhatsApp
+                            <img src="assets/img/whatsapp-white.svg" alt="WhatsApp">
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="form-wrapper">
+                        <h2 class="section-heading text-center">
+                            Свяжитесь с нами
+                        </h2>
+                        <form class="form" id="contact-form">
+                            <input type="text" name="name" class="name-input required" placeholder="Ваше имя" required>
+                            <input type="text" name="email" class="email-input required" placeholder="Ваш email адрес" required>
+                            <textarea name="message" id="message" class="message-textarea required" placeholder="Сообщение"></textarea>
+                            <button class="black-btn submit-btn" type="submit">
+                                Отправить
+                                <img src="assets/img/icon_arrow.svg" alt="arrow-left" class="header-cab-arrow">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="chat-wrapper mobile-only">
+                    <a class="chat-link">
+                        Онлайн чат
+                    </a>
+                    <a class="chat-link" href="https://web.telegram.org/" target="_blank">
+                        Telegram
+                        <img src="assets/img/telegram-white.svg" alt="Telegram">
+                    </a>
+                    <a class="chat-link" href="https://signal.org/" target="_blank">
+                        Signal
+                        <img src="assets/img/signal-white.svg" alt="Signal">
+                    </a>
+                    <a class="chat-link" href="https://www.whatsapp.com/" target="_blank">
+                        WhatsApp
+                        <img src="assets/img/whatsapp-white.svg" alt="WhatsApp">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-content-left">
+                    <div class="footer-social-bar">
+                        <div class="logo-wrapper">
+                            <a href="javascript:void(0);" onclick="scrollToTop()">
+                                <img src="assets/img/logo.svg" alt="logo">
+                            </a>
+                        </div>
+                        <div class="social-bar">
+                            <a href="https://www.instagram.com/" class="social-link" target="_blank">
+                                <img src="assets/img/insta-black.svg" alt="instagram" class="social-link-img">
+                            </a>
+                            <a href="https://www.facebook.com/" class="social-link" target="_blank">
+                                <img src="assets/img/facebook-black.svg" alt="facebook" class="social-link-img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-copyright">
+                        © Type-X Finance  <span class="current-year"></span>
+                    </div>
+                </div>
+                <div class="footer-content-right">
+                    <div class="footer-content-column">
+                        <h4 class="footer-column-list-heading">Продукты</h4>
+                        <ul class="footer-column-list">
+                            <li><a href="javascript:void(0);">Корпоративные карты</a></li>
+                            <li><a href="javascript:void(0);">Обмен криптовалют</a></li>
+                            <li><a href="javascript:void(0);">Гарант</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-content-column">
+                        <h4 class="footer-column-list-heading">Компания</h4>
+                        <ul class="footer-column-list">
+                            <li><a href="javascript:void(0);" onclick="scrollToAbout()">О нас</a></li>
+                            <li><a href="javascript:void(0);">Медиа</a></li>
+                            <li><a href="javascript:void(0);">Вакансии</a></li>
+                            <li><a href="javascript:void(0);" onclick="subscrPopupShow()">Новости</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-content-column">
+                        <h4 class="footer-column-list-heading">Помощь</h4>
+                        <ul class="footer-column-list">
+                            <li><a href="javascript:void(0);">FAQ</a></li>
+                            <li><a href="javascript:void(0);">Служба поддержки</a></li>
+                            <li><a href="javascript:void(0);">Пользовательское соглашение</a></li>
+                            <li><a href="javascript:void(0);">Конфиденциальность и безопасность</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mob-policy-block">
+                    <a href="javascript:void(0);" class="mob-policy-link">Политика конфиденциальности</a>
+                    <a href="javascript:void(0);" class="mob-policy-link">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="testimonial-popup" id="testimonial-popup">
+        <img src="assets/img/close.svg" alt="close" class="testimonial-popup-close">
+        <img src="assets/img/1.jpg" alt="screenshot" class="testimonial-screenshot">
+    </div>
+    
+    <div class="subscribe-popup">
+        <div class="form-wrapper">
+            <h2 class="section-heading text-center">
+                Новостная рассылка
+            </h2>
+            <form class="form" id="subscribe-form">
+                <input type="text" name="name" class="name-input" placeholder="Ваше имя" required>
+                <input type="text" name="email" class="email-input" placeholder="Ваш email адрес" required>
+                <button class="black-btn submit-btn" type="submit">
+                    Отправить
+                    <img src="assets/img/icon_arrow.svg" alt="arrow-left" class="header-cab-arrow">
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
